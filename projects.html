@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-      content="Portfolio projects by Ibrahim Hussain - Machine Learning, AI systems, statistical modeling, and data science applications." />
+      content="Projetos de Lucas Teixeira - Backend, Inteligência Artificial, Sistemas Escaláveis e Engenharia de Software." />
 
-    <title>Projects | Ibrahim Hussain</title>
+    <title>Projetos | Lucas Teixeira</title>
     <link rel="icon" type="image/png" href="pictures/favicon.png" />
 
     <!-- Stylesheets -->
@@ -19,24 +19,24 @@
     <!-- Fixed Navigation Header -->
     <header class="site-header">
       <div class="container">
-        <nav class="nav" aria-label="Primary navigation">
-          <a class="brand" href="index.html">Ibrahim Hussain</a>
+        <nav class="nav" aria-label="Navegação principal">
+          <a class="brand" href="index.html">Lucas Teixeira</a>
 
           <div class="nav-links" id="navLinks">
-            <a href="index.html" data-page="index">Home</a>
-            <a href="projects.html" data-page="projects">Projects</a>
-            <a href="resume.html" data-page="resume">Resume</a>
-            <a href="contact.html" data-page="contact">Contact</a>
+            <a href="index.html" data-page="index">Início</a>
+            <a href="projects.html" data-page="projects">Projetos</a>
+            <a href="resume.html" data-page="resume">Currículo</a>
+            <a href="contact.html" data-page="contact">Contato</a>
           </div>
 
           <div class="nav-ctrl">
             <button class="icon-btn" id="themeBtn" type="button"
-              aria-label="Toggle theme" title="Toggle theme">
+              aria-label="Alternar tema" title="Alternar tema">
               <span id="themeIcon" aria-hidden="true"></span>
             </button>
 
             <button class="icon-btn nav-toggle" id="navToggle" type="button"
-              aria-label="Toggle menu" aria-expanded="false">
+              aria-label="Alternar menu" aria-expanded="false">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2">
                 <line x1="3" y1="12" x2="21" y2="12" />
@@ -55,16 +55,15 @@
         <!-- Project Header -->
         <div class="proj-head card no-hover" id="featured">
           <div class="proj-title">
-            <h1>Projects</h1>
+            <h1>Projetos</h1>
             <p class="muted">
-              Filter by domain. Click any card to view details.
+              Filtre por área. Clique em qualquer card para ver detalhes.
             </p>
           </div>
 
           <div class="proj-controls">
-            <!-- SEARCH BAR REMOVED - Only filters remain -->
             <div class="filters" id="filterRow" role="group"
-              aria-label="Filter projects by domain"></div>
+              aria-label="Filtrar projetos por área"></div>
           </div>
         </div>
 
@@ -73,8 +72,15 @@
           class="projects-grid"
           id="projectsGrid"
           role="region"
-          aria-label="Projects list"
+          aria-label="Lista de projetos"
           aria-live="polite">
+
+          <!-- Empty state message -->
+          <div class="empty-state" style="text-align: center; padding: 4rem 2rem; grid-column: 1 / -1;">
+            <p class="muted" style="font-size: 1.1rem;">
+              🚧 Projetos em breve! Estou preparando meus trabalhos para exibir aqui.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -85,7 +91,7 @@
 
         <div class="modal-panel card no-hover">
           <button class="icon-btn modal-close" type="button"
-            aria-label="Close modal"
+            aria-label="Fechar modal"
             data-close="true">
             ✕
           </button>
@@ -99,7 +105,7 @@
               <p id="modalDesc" class="modal-desc"></p>
 
               <div class="tag-wrap" id="modalTags"
-                aria-label="Project technologies"></div>
+                aria-label="Tecnologias do projeto"></div>
 
               <div class="modal-links">
                 <a id="modalLive" class="btn primary" href="#" target="_blank"
@@ -111,7 +117,7 @@
                     <polyline points="15 3 21 3 21 9"></polyline>
                     <line x1="10" y1="14" x2="21" y2="3"></line>
                   </svg>
-                  Live Demo
+                  Demo ao Vivo
                 </a>
                 <a id="modalRepo" class="btn outline" href="#" target="_blank"
                   rel="noopener noreferrer">
@@ -120,7 +126,7 @@
                     <path
                       d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                   </svg>
-                  View Code
+                  Ver Código
                 </a>
               </div>
             </div>
@@ -134,34 +140,33 @@
       <div class="container">
         <div class="footer-inner">
           <div class="footer-left">
-            <h3>About</h3>
+            <h3>Sobre</h3>
             <p>
-              Quantitative Data Science student focused on statistical modelling
-              of complex systems, high-dimensional analytics, and production-ready
-              AI pipelines for decision-making under uncertainty.
+              Engenheiro de Software em formação com ênfase em Backend,
+              Inteligência Artificial e Sistemas Escaláveis. Focado em
+              construir soluções robustas e eficientes para problemas reais.
             </p>
             <p>
-              Quantitative Data Scientist | Systems Modelling | Risk & Decision
-              Analytics
+              Engenheiro de Software | Backend | IA & Sistemas Escaláveis
             </p>
           </div>
 
           <div class="footer-right">
             <h3>Links</h3>
             <ul class="footer-links">
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="https://github.com/ib-hussain" target="_blank"
+              <li><a href="projects.html">Projetos</a></li>
+              <li><a href="contact.html">Contato</a></li>
+              <li><a href="https://github.com/lucassantoss4" target="_blank"
                   rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://linkedin.com/in/ibrahim-hussain-1084ba255"
+              <li><a href="https://www.linkedin.com/in/lucas-t-santos/"
                   target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>
 
         <div class="credits">
-          Developed by <a href="https://github.com/ib-hussain" target="_blank"
-            rel="noopener noreferrer">Ibrahim Hussain</a>
+          Desenvolvido por <a href="https://github.com/lucassantoss4" target="_blank"
+            rel="noopener noreferrer">Lucas Teixeira</a>
         </div>
       </div>
     </footer>
