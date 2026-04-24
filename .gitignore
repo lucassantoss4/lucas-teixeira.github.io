@@ -1,0 +1,20 @@
+# Ignore virtual environments
+venv/
+.vscode
+*virtualhealth_logo.html
+# Ignore Python cache
+__pycache__/
+
+# Ignore IDE settings
+.vscode/
+
+# Ignore OS files
+.DS_Store
+
+# Ignore compiled files
+*.pyc
+*.pyo
+*.pyd
+*.mp4
+*.avi
+*.zip
