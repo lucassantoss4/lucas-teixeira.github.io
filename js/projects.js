@@ -3,11 +3,11 @@
 // Use static project data from projects-data.js
 const projects = window.PROJECTS || [];
 const filters = window.PROJECT_DOMAINS || [
-  { key: 'all', label: 'All Projects' },
-  { key: 'health', label: 'Healthcare AI' },
-  { key: 'finance', label: 'Quantitative Finance' },
-  { key: 'risk', label: 'Marketing & Risk Prediction' },
-  { key: 'tech', label: 'Technology & Data Science' }
+  { key: 'all', label: 'Todos os Projetos' },
+  { key: 'backend', label: 'Backend & APIs' },
+  { key: 'ai', label: 'Inteligência Artificial' },
+  { key: 'systems', label: 'Sistemas Escaláveis' },
+  { key: 'engineering', label: 'Engenharia de Software' }
 ];
 
 // DOM Elements
@@ -77,8 +77,8 @@ function renderProjects() {
     empty.style.padding = 'var(--space-3xl)';
     empty.style.textAlign = 'center';
     empty.innerHTML = `
-      <b>No projects found</b>
-      <p class="muted">Try selecting a different filter category.</p>
+      <b>Nenhum projeto encontrado</b>
+      <p class="muted">Tente selecionar uma categoria diferente.</p>
     `;
     grid.appendChild(empty);
     return;
@@ -118,7 +118,7 @@ function renderProjects() {
     grid.appendChild(card);
   });
 
-  const announcement = `Showing ${filteredProjects.length} project${filteredProjects.length !== 1 ? 's' : ''}`;
+  const announcement = `Mostrando ${filteredProjects.length} projeto${filteredProjects.length !== 1 ? 's' : ''}`;
   grid.setAttribute('aria-label', announcement);
 }
 

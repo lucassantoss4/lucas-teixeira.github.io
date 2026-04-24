@@ -26,17 +26,17 @@ function validateForm() {
   const message = document.getElementById('message').value.trim();
   
   if (!name || name.length < 2) {
-    showToast('Please enter a valid name.', false);
+    showToast('Por favor, insira um nome válido.', false);
     return false;
   }
   
   if (!email || !email.includes('@')) {
-    showToast('Please enter a valid email address.', false);
+    showToast('Por favor, insira um email válido.', false);
     return false;
   }
   
   if (!message || message.length < 10) {
-    showToast('Please enter a message (at least 10 characters).', false);
+    showToast('Por favor, escreva uma mensagem (mínimo 10 caracteres).', false);
     return false;
   }
   
@@ -62,7 +62,7 @@ if (form) {
         <circle cx="12" cy="12" r="10"></circle>
         <polyline points="12 6 12 12 16 14"></polyline>
       </svg>
-      Sending...
+      Enviando...
     `;
     btn.disabled = true;
     
@@ -81,14 +81,14 @@ if (form) {
       
       // Success
       form.reset();
-      showToast('Message sent successfully! I\'ll get back to you soon.', true);
+      showToast('Mensagem enviada com sucesso! Retornarei em breve.', true);
       
       // Add success animation to button
       btn.innerHTML = `
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polyline points="20 6 9 17 4 12"></polyline>
         </svg>
-        Sent!
+        Enviado!
       `;
       
       // Reset button after delay
@@ -100,7 +100,7 @@ if (form) {
     } catch (error) {
       // Error handling
       console.error('Form submission error:', error);
-      showToast('Something went wrong. Please try again or email me directly.', false);
+      showToast('Algo deu errado. Tente novamente ou envie um email diretamente.', false);
       
       // Reset button
       btn.innerHTML = originalText;
@@ -121,7 +121,7 @@ if (messageField) {
     
     // Update aria-label for accessibility
     if (length < minChars) {
-      e.target.setAttribute('aria-label', `Message (${minChars - length} more characters needed)`);
+      e.target.setAttribute('aria-label', `Mensagem (faltam ${minChars - length} caracteres)`);
     } else {
       e.target.setAttribute('aria-label', 'Message');
     }

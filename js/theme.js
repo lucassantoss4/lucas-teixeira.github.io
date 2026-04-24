@@ -1,6 +1,6 @@
 // js/theme.js - Enhanced Theme Management
 
-const THEME_KEY = 'ih_portfolio_theme';
+const THEME_KEY = 'lt_portfolio_theme';
 const themeBtn = document.getElementById('themeBtn');
 const themeIcon = document.getElementById('themeIcon');
 
@@ -55,8 +55,8 @@ function setTheme(theme, skipTransition = false) {
 
   // Update button title
   if (themeBtn) {
-    themeBtn.setAttribute('title', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
-    themeBtn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+    themeBtn.setAttribute('title', `Alternar para modo ${theme === 'dark' ? 'claro' : 'escuro'}`);
+    themeBtn.setAttribute('aria-label', `Alternar para modo ${theme === 'dark' ? 'claro' : 'escuro'}`);
   }
 
   // Re-enable transitions
