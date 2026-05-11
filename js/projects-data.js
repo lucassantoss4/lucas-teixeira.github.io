@@ -10,7 +10,7 @@ window.PROJECTS = [
     description: "Um gerador de senhas aleatórias intuitivo e seguro. Permite personalizar o comprimento da senha e oferece funcionalidade de cópia rápida com um clique.",
     tags: ["HTML5", "CSS3", "JavaScript"],
     domain: ["engineering"],
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+    image: "pictures/Gerador-de-senhas.png",
     repo: "https://github.com/lucassantoss4/GeradorDeSenhas.git",
     live: "https://geradordesenhas-upko.onrender.com/"
   }
