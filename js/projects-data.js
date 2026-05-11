@@ -3,18 +3,17 @@
 // Última atualização: 2026-04-24
 
 window.PROJECTS = [
-  // Adicione seus projetos aqui seguindo o formato:
-  // {
-  //   id: "id-do-projeto",
-  //   title: "Nome do Projeto",
-  //   subtitle: ["Backend & APIs", "Inteligência Artificial"],
-  //   description: "Descrição detalhada do projeto...",
-  //   tags: ["python", "fastapi", "docker"],
-  //   domain: ["backend", "ai"],
-  //   image: "pictures/nome-do-projeto/imagem.png",
-  //   repo: "https://github.com/lucassantoss4/nome-do-projeto",
-  //   live: "https://link-do-deploy.com"
-  // }
+  {
+    id: "gerador-de-senha",
+    title: "Gerador de Senha",
+    subtitle: ["Frontend & Ferramentas", "Engenharia de Software"],
+    description: "Um gerador de senhas aleatórias intuitivo e seguro. Permite personalizar o comprimento da senha e oferece funcionalidade de cópia rápida com um clique.",
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    domain: ["engineering"],
+    image: "pictures/gerador-de-senhas/mockup.png",
+    repo: "https://github.com/lucassantoss4/GeradorDeSenhas.git",
+    live: "https://geradordesenhas-upko.onrender.com/"
+  }
 ];
 
 // Configuração dos filtros por área
