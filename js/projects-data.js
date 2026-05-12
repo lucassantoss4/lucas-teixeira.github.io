@@ -4,6 +4,17 @@
 
 window.PROJECTS = [
   {
+    id: "ninja-game",
+    title: "Jogo Ninja - Pygame",
+    subtitle: ["Game Development", "Engenharia de Software"],
+    description: "Um jogo de arcade frenético com física de inércia, sistema de partículas e dificuldade progressiva. Desenvolvido com Pygame-ce seguindo padrões de arquitetura modular.",
+    tags: ["Python", "Pygame", "OOP", "Game Design"],
+    domain: ["engineering"],
+    image: "pictures/Pygame.png",
+    repo: "https://github.com/lucassantoss4/pygame.git",
+    live: "https://lucassantoss4.github.io/pygame/"
+  },
+  {
     id: "gerador-de-senha",
     title: "Gerador de Senha",
     subtitle: ["Frontend & Ferramentas", "Engenharia de Software"],
