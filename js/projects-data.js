@@ -4,6 +4,17 @@
 
 window.PROJECTS = [
   {
+    id: "pendulo-de-ondas",
+    title: "Análise da Dinâmica do Pêndulo de Ondas",
+    subtitle: ["Data Science", "Engenharia de Software"],
+    description: "Análise técnica sobre a dinâmica de oscilação de pêndulos simples. Integração de modelagem matemática (SciPy) com forças dissipativas e validação de dados experimentais via Tracker.",
+    tags: ["Python", "SciPy", "Física", "Modelagem Numérica"],
+    domain: ["engineering", "ai"],
+    image: "pictures/pendulo.png",
+    repo: "https://github.com/lucassantoss4/An-lise-da-Din-mica-do-P-ndulo.git",
+    live: "https://lucassantoss4.github.io/An-lise-da-Din-mica-do-P-ndulo/"
+  },
+  {
     id: "ninja-game",
     title: "Jogo Ninja - Pygame",
     subtitle: ["Game Development", "Engenharia de Software"],
